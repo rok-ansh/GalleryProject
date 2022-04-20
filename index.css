@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.panel{
+    position: relative;
+    height: 80vh;
+    /* flex is used to adjust width or inner component how much space it would take same as flex basis */
+    flex: 0.5; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    color: antiquewhite;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 1000ms ease-in-out;
+}
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+#panel-1{
+    background-image: url("room1.jpg");
+   
+    /* flex: 6; */
+}
+#panel-2{
+    background-image: url("room2.jpg");
+   
+}
+#panel-3{
+    background-image: url("room3.jpg");
+   
+}
+#panel-4{
+    background-image: url("room4.jpg");
+ 
+}
+#panel-5{
+    background-image: url("blog2.jpg");
+    
+}
